@@ -17,18 +17,18 @@ class Node:
 
     @property
     def data(self):
-        """Get/set the data of the node."""
+        """Get/set the data of the Node."""
         return (self.__data)
 
     @data.setter
     def data(self, value):
         if not isinstance(value, int):
-            raise TypeError(" data must be an integer")
+            raise TypeError("data must be an integer")
         self.__data = value
 
     @property
     def next_node(self):
-        """Get/set the next_node of the node."""
+        """Get/set the next_node of the Node."""
         return (self.__next_node)
 
     @next_node.setter
@@ -36,6 +36,7 @@ class Node:
         if not isinstance(value, Node) and value is not None:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
 
 class SinglyLinkedList:
     """Represent a singly-linked list."""
@@ -51,7 +52,7 @@ class SinglyLinkedList:
         ordered numerical position.
 
         Args:
-            values (Node): The new node to insert.
+            values (Node): The new Node to insert.
         """
         new = Node(value)
         if self.__head is None:
@@ -75,5 +76,4 @@ class SinglyLinkedList:
        while tmp is not none:
            values.append(str(tmp.data))
            tmp = tmp.next.node
-        return ('\n'.join(values))
-                                                                                                                                                             1,18          Top
+        return ('\n'.join(value))
