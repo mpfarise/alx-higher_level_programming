@@ -5,12 +5,12 @@
 class Node:
     """Represent a node in a singly-linked list."""
 
-    def __int__(self, data next_Node=none):
+    def __int__(self, data, next_node=None):
         """Initialize a new Node.
 
         Args:
             data (int): The data of the new Node.
-            next_node (int): The next node of the new node.
+            next_node (Node): The next node of the new node.
         """
         self.data = data
         self.next_node = next_node
@@ -47,7 +47,7 @@ class SinglyLinkedList:
     def sorted.insert(self, value):
         """Insert a new Node to the SinglyLinkedList.
 
-        The nodeis inserted into the list at the correct
+        The node is inserted into the list at the correct
         ordered numerical position.
 
         Args:
@@ -75,4 +75,5 @@ class SinglyLinkedList:
        while tmp is not none:
            values.append(str(tmp.data))
            tmp = tmp.next.node
+        return ('\n'.join(values))
                                                                                                                                                              1,18          Top
